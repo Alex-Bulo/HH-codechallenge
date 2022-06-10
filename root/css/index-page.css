@@ -25,7 +25,7 @@ main {
 /* carrousel styles */
 .carrousel-container {
   position: relative;
-  width: 100%;  
+  width: 100%;
   height: 280px;
 
   display: flex;
@@ -107,17 +107,26 @@ main {
   margin: auto;
   margin-top: 25px;
 
-  width: 80%;
+  width: 90%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.form-options{
+    width: 90%;
+}
+.form-option {
+  margin: 5px 0;
+  text-align: center;
+}
 .register-form .subtitle span {
   color: #39b24a;
 }
 .register-input {
+  min-width: 180px;
   width: 100%;
+  max-width: 600px;
   padding: 2px 5px;
 
   border-radius: 10px;
@@ -139,12 +148,12 @@ main {
   background-color: #39b24999;
 }
 @media (min-width: 415px) {
-    .carrousel-container {
-        margin: auto;
-        width: 90%;
-        max-width: 520px;
-        height: 380px;
-      }
+  .carrousel-container {
+    margin: auto;
+    width: 90%;
+    max-width: 520px;
+    height: 380px;
+  }
 }
 
 @media (min-width: 780px) {
@@ -154,44 +163,42 @@ main {
     height: 500px;
   }
   #carrousel-arrow-left,
-#carrousel-arrow-right {
-  padding-top: 250px;
-}
-.main-descriptions{
+  #carrousel-arrow-right {
+    padding-top: 250px;
+  }
+  .main-descriptions {
     flex-direction: row;
     justify-content: space-around;
-}
-.card {
+  }
+  .card {
     height: 450px;
     width: 40%;
 
     border-radius: 15px;
-
   }
-  .card-slogan{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #F3F3F3;
+  .card-slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3f3f3;
 
-      background-color: #FFFFFF;
-      background-image: url("../img/better-pizza.jpg");
-      background-size:cover;
-      
-      box-shadow: -2px 2px 5px 1px #39b24a4f;
-      opacity: 95%;
+    background-color: #ffffff;
+    background-image: url("../img/better-pizza.jpg");
+    background-size: cover;
+
+    box-shadow: -2px 2px 5px 1px #39b24a4f;
+    opacity: 95%;
   }
-.card-choices{
-    padding-top:5%;
+  .card-choices {
+    padding-top: 5%;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     background-image: url("../img/pizza-choices.jpg");
     background-size: 100% 55%;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    
+
     box-shadow: -2px 2px 5px 1px #39b24a4f;
     opacity: 95%;
-
-}
+  }
 }

@@ -70,9 +70,23 @@
 
         <section>
             <form class="form register-form" action="">
-                <h2 class="subtitle"><span>Register</span> for discounts!</h2>
-                <input class="register-input" type="text" placeholder="your.email@gmail.com">
-                <span></span>
+                <h2 class="subtitle"><span>Register</span> for weekly pizzas!</h2>
+                <div class="form-options">
+                    <div class="form-option">
+                        <input type="radio" id="day" name="choice" value="day">
+                        <label for="day">Pizza of the day</label>
+                    </div>
+
+                    <div class="form-option">
+                        <input type="radio" id="week" name="choice" value="week" checked>
+                        <label for="week">Pizza of the week</label>
+                    </div>
+                
+                    <div class="form-option">
+                        <input class="register-input" type="text" placeholder="your.email@gmail.com">
+                        <span></span>
+                    </div>
+            </div>
                 <button class="CTA form-submit">Send</button>
             </form>
 
