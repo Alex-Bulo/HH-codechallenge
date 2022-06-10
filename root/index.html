@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,101 +13,138 @@
       rel="stylesheet"
     />
 
-<!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/bbcd5b93e4.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/bbcd5b93e4.js"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- My CSS -->
+    <!-- My CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/index-page.css" />
+
+    <script src="./js/index-page.js"></script>
 
     <title>Alejandro Bullorini para HH</title>
   </head>
   <body>
-
     <header>
-        <div class="logo-container">
-          <img class="logo-img" src="./img/pizza-logo.svg" alt="logo pic" />
-          <h2 class="logo-text"><span>Alex</span>~<span>Bullo</span></h2>
-        </div>
-        
-        <nav class="header-nav">
-          <ul>
-            <li><a href="#slogan">Home</a></li>
-            <li><a href="./manage.html">Manage</a></li>
-            <li><a href="./pizzas.html">Pizzas</a></li>
-          </ul>
-        </nav>
-      </header>
-  
-      <main>
-        
-        <section class="carrousel-container">
-            <i id="carrousel-arrow-left" class="fa-solid fa-caret-left"></i>
+      <div class="logo-container">
+        <img class="logo-img" src="./img/pizza-logo.svg" alt="logo pic" />
+        <h2 class="logo-text"><span>Alex</span>~<span>Bullo</span></h2>
+      </div>
 
-            <img src="./img/pizza-1.jpg" alt="Whole pizza for carrousel">
-            <img src="./img/pizza-3.jpg" alt="Sliced pizza for carrousel">
-            <img src="./img/pizza-2.jpg" alt="Whole pizza with tomatoes for carrousel">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#slogan">Home</a></li>
+          <li><a href="./manage.html">Manage</a></li>
+          <li><a href="./pizzas.html">Pizzas</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <i id="carrousel-arrow-right" class="fa-solid fa-caret-right"></i>
-        </section>
+    <main>
+      <section class="carrousel-container">
+        <i id="carrousel-arrow-left" class="fa-solid fa-caret-left"></i>
 
-        <section class="main-descriptions">
-            <article class="card card-slogan">
-                <h1 class="subtitle" id="slogan">Everything is <span>better</span> with <span>pizza</span></h1>
-            </article>
+        <img src="./img/pizza-1.jpg" alt="Whole pizza for carrousel" />
+        <img src="./img/pizza-3.jpg" alt="Sliced pizza for carrousel" />
+        <img
+          src="./img/pizza-2.jpg"
+          alt="Whole pizza with tomatoes for carrousel"
+        />
 
-            <article class="card card-choices">
-                <h2 class="subtitle">Client's top choices</h2>
-                <ol>
-                    <li>Pepperoni</li>
-                    <li>Neapolitan</li>
-                    <li>Calabrese</li>
-                    <li>Vegan</li>
-                </ol>
-            </article>
-    
-        </section>
+        <i id="carrousel-arrow-right" class="fa-solid fa-caret-right"></i>
+      </section>
 
-        <section>
-            <form class="form register-form" action="">
-                <h2 class="subtitle"><span>Register</span> for weekly pizzas!</h2>
-                <div class="form-options">
-                    <div class="form-option">
-                        <input type="radio" id="day" name="choice" value="day">
-                        <label for="day">Pizza of the day</label>
-                    </div>
+      <section class="main-descriptions">
+        <article class="card card-slogan">
+          <h1 class="subtitle" id="slogan">
+            Everything is <span>better</span> with <span>pizza</span>
+          </h1>
+        </article>
 
-                    <div class="form-option">
-                        <input type="radio" id="week" name="choice" value="week" checked>
-                        <label for="week">Pizza of the week</label>
-                    </div>
-                
-                    <div class="form-option">
-                        <input class="register-input" type="text" placeholder="your.email@gmail.com">
-                        <span></span>
-                    </div>
+        <article class="card card-choices">
+          <h2 class="subtitle">Client's top choices</h2>
+          <ol>
+            <li>Pepperoni</li>
+            <li>Neapolitan</li>
+            <li>Calabrese</li>
+            <li>Vegan</li>
+          </ol>
+        </article>
+      </section>
+
+      <section>
+        <form class="form register-form">
+          <h2 class="subtitle"><span>Register</span> for weekly pizzas!</h2>
+          <div class="form-options">
+            <div class="form-option">
+              <input type="radio" id="day" name="choice" value="day" />
+              <label for="day">Pizza of the day</label>
             </div>
-                <button class="CTA form-submit">Send</button>
-            </form>
 
-        </section>
-        
-        
-    </main>
-    <footer>
-        <div class="logo-container">
-            <h2 class="logo-text"><span>Alex</span>~<span>Bullo</span></h2>
+            <div class="form-option">
+              <input
+                type="radio"
+                id="week"
+                name="choice"
+                value="week"
+                checked
+              />
+              <label for="week">Pizza of the week</label>
+            </div>
+
+            <div class="form-option">
+              <input
+                class="register-input"
+                id="mail"
+                type="text"
+                placeholder="your.email@gmail.com"
+              />
+              <p id="mail-error" class="error-msg"></p>
+            </div>
           </div>
-          
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>Manage</li>
-              <li>Pizzas</li>
-            </ul>
-          </nav>
-        <h3>Created by Alejandro Bullorini for HolaHello</h3>
+          <button class="CTA form-submit">Send</button>
+        </form>
+
+        <div id="confirmation-captcha" class="popUp-background">
+          <div class="captcha-container">
+            <h4 class="subtitle">Confirm you are a human</h4>
+            <h5 class="captcha">5</h5>
+            <input class="captcha-result" />
+            <button class="CTA captcha-submit">Confirm</button>
+            <p id="captcha-error" class="error-msg"></p>
+          </div>
+        </div>
+      </section>
+
+      <div id="confirmation-email" class="popUp-background">
+        <div class="confirmation-container">
+          <h4 class="subtitle">Email Sent</h4>
+          <p class="confirmation-msg">
+            Since using 'mailto:' is not recommended and I would need to use
+            some backend technology for actually sending the email, below is the
+            content from the form to send out:
+          </p>
+          <p id="email"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="logo-container">
+        <h2 class="logo-text"><span>Alex</span>~<span>Bullo</span></h2>
+      </div>
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Manage</li>
+          <li>Pizzas</li>
+        </ul>
+      </nav>
+      <h3>Created by Alejandro Bullorini for HolaHello</h3>
     </footer>
- 
-</body>
+  </body>
 </html>

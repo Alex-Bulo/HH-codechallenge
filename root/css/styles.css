@@ -18,6 +18,9 @@ a{
 ul, ol{
     list-style-type: none;
 }
+.error-msg{
+    color: #b00f00;
+}
 
 header, footer{
     min-height: 10vh;

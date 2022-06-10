@@ -6,7 +6,7 @@ main {
   background-color: #e5e5e5;
   min-height: 80vh;
 }
-@keyframes slide-right {
+@keyframes slide-left {
   0% {
     transform: translateX(0);
   }
@@ -14,13 +14,25 @@ main {
     transform: translateX(-200%);
   }
 }
-@keyframes slide-left {
+@keyframes slide-right {
   0% {
     transform: translateX(-200%);
   }
   100% {
     transform: translateX(0);
   }
+}
+.sliding-left{
+    animation-name: slide-left;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.sliding-right{
+    animation-name: slide-right;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 /* carrousel styles */
 .carrousel-container {
@@ -36,15 +48,10 @@ main {
   box-shadow: -2px 2px 5px 1px #39b24a4f;
 }
 
-.carrousel-container img {
+.carrousel-container img{
   width: 100%;
-
-  animation-name: slide-right;
-  animation-duration: 15s;
-  animation-delay: 3s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
+
 #carrousel-arrow-left,
 #carrousel-arrow-right {
   position: absolute;
@@ -147,6 +154,69 @@ main {
 
   background-color: #39b24999;
 }
+
+.popUp-background{
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 13;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a8a8a8b6;
+
+}
+#confirmation-captcha{
+    display: none;
+}
+#confirmation-email{
+    display: none;
+}
+
+.captcha-container, .confirmation-container{
+    width: 90%;
+    height: 200px;
+
+    border-radius: 15px;
+    border: 2px solid #39b24999;
+    background-color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.captcha{
+    font-style: oblique;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fc200c;
+}
+
+.confirmation-container{
+    padding: 5px;
+    height: 60%;
+    
+    font-size: 16px;
+    
+    justify-content: flex-start;
+}
+#email{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#email span{
+    color: #39b24a;
+}
+
+
 @media (min-width: 415px) {
   .carrousel-container {
     margin: auto;
