@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style-type: none;
+}
+
+header, footer{
+    min-height: 10vh;
+    background-color: #222222;
+    color:#F3F3F3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+}
+.logo-img{
+    width: 50px;
+}
+.logo-text{
+    font-size: 15px;
+}
+.logo-text span:nth-child(1){
+    margin-left: 3px;
+    color:#39B24A;
+}
+.logo-text span:nth-child(2){
+    color:#FC200C;
+}
+.header-nav ul{
+    margin-right: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+
+    list-style-type: none;
+}
+
+.header-nav li{
+    margin-left: 5px;
+}
+
+/* Footer styles */
+footer{
+    padding: 5px;
+}
+footer li{
+    font-size: 14px;
+    margin-top: 5px;
+}
+footer h3{
+    width: 100%;
+    margin-top: 15px;
+    
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    
+    background-color: #2c2222;
+}
+
+
+@media (min-width: 415px){
+
+    .logo-img{
+        width: 70px;
+    }
+    .logo-text{
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 780px){
+
+}

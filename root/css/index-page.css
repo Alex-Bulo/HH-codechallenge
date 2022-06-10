@@ -1,0 +1,197 @@
+/* Main general styles */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #e5e5e5;
+  min-height: 80vh;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* carrousel styles */
+.carrousel-container {
+  position: relative;
+  width: 100%;  
+  height: 280px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+  box-shadow: -2px 2px 5px 1px #39b24a4f;
+}
+
+.carrousel-container img {
+  width: 100%;
+
+  animation-name: slide-right;
+  animation-duration: 15s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+#carrousel-arrow-left,
+#carrousel-arrow-right {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  padding-top: 165px;
+
+  font-size: 24px;
+
+  color: #f3f3f3d3;
+}
+#carrousel-arrow-left {
+  z-index: 10;
+  padding-left: 5px;
+}
+#carrousel-arrow-right {
+  z-index: 11;
+  padding-right: 5px;
+  right: 0;
+}
+
+/* description cards styles */
+.main-descriptions {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slogan {
+  font-size: 22px;
+}
+#slogan span:nth-child(1) {
+  color: #39b24a;
+}
+#slogan span:nth-child(2) {
+  color: #fc200c;
+}
+.card-choices {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #39b2490e; */
+}
+.card-choices ol {
+  list-style: auto;
+}
+.subtitle {
+  margin-bottom: 15px;
+}
+.card-choices li:nth-child(odd) {
+  margin-right: 55px;
+}
+.card-choices li:nth-child(even) {
+  margin-left: 55px;
+}
+/* Form styles */
+.form {
+  margin: auto;
+  margin-top: 25px;
+
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-form .subtitle span {
+  color: #39b24a;
+}
+.register-input {
+  width: 100%;
+  padding: 2px 5px;
+
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.CTA {
+  width: 50%;
+  margin: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+  border: 1px solid #39b24a;
+  border-radius: 15px;
+
+  background-color: #39b24999;
+}
+@media (min-width: 415px) {
+    .carrousel-container {
+        margin: auto;
+        width: 90%;
+        max-width: 520px;
+        height: 380px;
+      }
+}
+
+@media (min-width: 780px) {
+  .carrousel-container {
+    margin: auto;
+    max-width: 680px;
+    height: 500px;
+  }
+  #carrousel-arrow-left,
+#carrousel-arrow-right {
+  padding-top: 250px;
+}
+.main-descriptions{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    height: 450px;
+    width: 40%;
+
+    border-radius: 15px;
+
+  }
+  .card-slogan{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #F3F3F3;
+
+      background-color: #FFFFFF;
+      background-image: url("../img/better-pizza.jpg");
+      background-size:cover;
+      
+      box-shadow: -2px 2px 5px 1px #39b24a4f;
+      opacity: 95%;
+  }
+.card-choices{
+    padding-top:5%;
+
+    background-color: #FFFFFF;
+    background-image: url("../img/pizza-choices.jpg");
+    background-size: 100% 55%;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    
+    box-shadow: -2px 2px 5px 1px #39b24a4f;
+    opacity: 95%;
+
+}
+}
