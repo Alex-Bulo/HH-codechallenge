@@ -127,6 +127,10 @@ main {
   margin: 5px 0;
   text-align: center;
 }
+.form-submit, .captcha-submit{
+    width: 50%;
+    margin: 10px;
+}
 .register-form .subtitle span {
   color: #39b24a;
 }
@@ -140,38 +144,7 @@ main {
   font-size: 16px;
   line-height: 24px;
 }
-.CTA {
-  width: 50%;
-  margin: 10px;
 
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-
-  border: 1px solid #39b24a;
-  border-radius: 15px;
-
-  background-color: #39b24999;
-}
-
-.popUp-background{
-
-    width: 100vw;
-    height: 100vh;
-
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 13;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #a8a8a8b6;
-
-}
 #confirmation-captcha{
     display: none;
 }

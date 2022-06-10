@@ -18,6 +18,7 @@ window.addEventListener('load', function(){
     
     const emailMsg = this.document.querySelector('#confirmation-email')
     const emailTxt = this.document.querySelector('#email')
+    const emailContainer = this.document.querySelector('.confirmation-container')
 
 
 
@@ -90,6 +91,12 @@ window.addEventListener('load', function(){
     captchaResult.addEventListener('focus',()=>{
         captchaError.innerText=''
     })
+
+    emailMsg.addEventListener('click', ()=> {
+        emailMsg.style.display='none'
+    })
+
+    emailContainer.addEventListener('click',(e)=>e.stopPropagation())
 
 
 })

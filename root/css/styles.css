@@ -18,10 +18,41 @@ a{
 ul, ol{
     list-style-type: none;
 }
+
 .error-msg{
     color: #b00f00;
 }
 
+.CTA {  
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  
+    border: 1px solid #39b24a;
+    border-radius: 15px;
+  
+    background-color: #39b24999;
+}
+.popUp-background{
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 13;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a8a8a8b6;
+
+}
+
+/* Header styles */
 header, footer{
     min-height: 10vh;
     background-color: #222222;
