@@ -24,14 +24,14 @@ main {
 }
 .sliding-left{
     animation-name: slide-left;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 .sliding-right{
     animation-name: slide-right;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 /* carrousel styles */

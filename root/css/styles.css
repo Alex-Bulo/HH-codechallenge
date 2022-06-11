@@ -128,5 +128,13 @@ footer h3{
 }
 
 @media (min-width: 780px){
-
+    .logo-container{
+        margin-left: 25px;
+    }
+.header-nav ul{
+    margin-right: 25px;
+}
+footer{
+    padding: 10px 25px;
+}
 }

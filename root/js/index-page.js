@@ -11,6 +11,7 @@ window.addEventListener('load', function(){
     const emailError = this.document.querySelector('#mail-error')
     
     const captcha = this.document.querySelector('#confirmation-captcha')
+    const captchaContainer = this.document.querySelector('.captcha-container')
     const captchaSubmit = this.document.querySelector('.captcha-submit')
     const captchaParameter = this.document.querySelector('.captcha')
     const captchaResult = this.document.querySelector('.captcha-result')
@@ -92,6 +93,12 @@ window.addEventListener('load', function(){
         captchaError.innerText=''
     })
 
+    captcha.addEventListener('click',()=>{
+        captcha.style.display = 'none'
+    })
+
+    captchaContainer.addEventListener('click',(e)=>e.stopPropagation())
+    
     emailMsg.addEventListener('click', ()=> {
         emailMsg.style.display='none'
     })
